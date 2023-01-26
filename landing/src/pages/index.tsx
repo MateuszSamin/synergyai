@@ -15,6 +15,7 @@ import Wilner from '../../public/logos/wilner.png'
 import Loco from '../../public/loco.png'
 import useMediaQuery from '../hooks/useMediaQuery'
 import ScrollContainer from 'react-indiana-drag-scroll'
+import Faq from '@/components/Faq'
 
 export default function Home() {
 	const isDesktop = useMediaQuery('(min-width: 768px)')
@@ -48,16 +49,18 @@ export default function Home() {
 				/>
 				<Image
 					draggable={false}
-					className='z-10 mix-blend-color-dodge absolute w-full top-0 left-0'
+					className='blur-[5px] z-10 mix-blend-color-dodge absolute w-full top-0 left-0'
 					src={Flare}
 					alt={'flare'}
 				/>
 				<Image
+					draggable={false}
 					className='absolute w-24 -ml-[60vw] md:-ml-[35rem] mt-32 z-10'
 					src={Dots1}
 					alt='dots'
 				/>
 				<Image
+					draggable={false}
 					className='absolute w-24 ml-[60vw] md:ml-[30rem] -mt-[22rem]'
 					src={Dots2}
 					alt='dots'
@@ -104,64 +107,67 @@ export default function Home() {
 						{isDesktop ? (
 							<div className='flex w-full gap-6 items-center'>
 								<Image
-									className='w-32'
+									className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Certik}
 									alt='partner logo'
 								/>
 								<Image
-									className='w-32'
+									className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Chainlink}
 									alt='partner logo'
 								/>
 								<Image
-									className='w-24'
+									className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Bitget}
 									alt='partner logo'
 								/>
 								<Image
-									className='w-20'
+									className='w-20 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Parlour}
 									alt='partner logo'
 								/>
 								<Image
-									className='w-24'
+									className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Wilner}
 									alt='partner logo'
 								/>
 							</div>
 						) : (
 							<ScrollContainer vertical={false} horizontal>
-							<div className='flex w-full gap-6 items-center'>
-								<Image
-									className='w-32'
-									src={Certik}
-									alt='partner logo'
-								/>
-								<Image
-									className='w-32'
-									src={Chainlink}
-									alt='partner logo'
-								/>
-								<Image
-									className='w-24'
-									src={Bitget}
-									alt='partner logo'
-								/>
-								<Image
-									className='w-20'
-									src={Parlour}
-									alt='partner logo'
-								/>
-								<Image
-									className='w-24'
-									src={Wilner}
-									alt='partner logo'
-								/>
-							</div>
+								<div className='flex w-full gap-6 items-center'>
+									<Image
+										className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
+										src={Certik}
+										alt='partner logo'
+									/>
+									<Image
+										className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
+										src={Chainlink}
+										alt='partner logo'
+									/>
+									<Image
+										className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
+										src={Bitget}
+										alt='partner logo'
+									/>
+									<Image
+										className='w-20 opacity-50 hover:opacity-100 duration-300 transition'
+										src={Parlour}
+										alt='partner logo'
+									/>
+									<Image
+										className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
+										src={Wilner}
+										alt='partner logo'
+									/>
+								</div>
 							</ScrollContainer>
 						)}
 					</div>
 				</Container>
+			</section>
+			<section className='bg-background h-screen'>
+				<Faq />
 			</section>
 		</>
 	)
