@@ -6,8 +6,19 @@ import Flare from '../../public/flare.png'
 import BgLogo from '../../public/bgLogo.png'
 import Dots1 from '../../public/dots/1.png'
 import Dots2 from '../../public/dots/2.png'
+import Container from '@/components/Container'
+import Bitget from '../../public/logos/bitget.png'
+import Certik from '../../public/logos/certik.webp'
+import Chainlink from '../../public/logos/chainlink.png'
+import Parlour from '../../public/logos/parlour.png'
+import Wilner from '../../public/logos/wilner.png'
+import Loco from '../../public/loco.png'
+import useMediaQuery from '../hooks/useMediaQuery'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 export default function Home() {
+	const isDesktop = useMediaQuery('(min-width: 768px)')
+
 	return (
 		<>
 			<Head>
@@ -28,7 +39,7 @@ export default function Home() {
 					rel='stylesheet'
 				/>
 			</Head>
-			<main className='bg-background font-sora overflow-hidden w-full h-screen flex flex-col justify-center items-center text-white gap-1'>
+			<main className='bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white gap-1'>
 				<Image
 					draggable={false}
 					className='z-10 absolute w-11/12 md:w-8/12'
@@ -41,8 +52,16 @@ export default function Home() {
 					src={Flare}
 					alt={'flare'}
 				/>
-				<Image className='absolute w-24 -ml-[60vw] md:-ml-[35rem] mt-32 z-10' src={Dots1} alt='dots' />
-				<Image className='absolute w-24 ml-[60vw] md:ml-[30rem] -mt-[22rem]' src={Dots2} alt='dots' />
+				<Image
+					className='absolute w-24 -ml-[60vw] md:-ml-[35rem] mt-32 z-10'
+					src={Dots1}
+					alt='dots'
+				/>
+				<Image
+					className='absolute w-24 ml-[60vw] md:ml-[30rem] -mt-[22rem]'
+					src={Dots2}
+					alt='dots'
+				/>
 				<h1 className='relative z-20 text-5xl md:text-7xl font-semibold text-center'>
 					Never get <br />{' '}
 					<span className='text-light-green'>rugged</span> again.
@@ -61,6 +80,89 @@ export default function Home() {
 					</button>
 				</div>
 			</main>
+			<section className='pt-24 md:pt-0 bg-background font-sora text-white'>
+				<Container className='flex flex-col xl:flex-row justify-between'>
+					<div className='flex items-center'>
+						<div className='border-2 rounded-full aspect-square w-20 h-20'>
+							<Image src={Loco} alt='loco' />
+						</div>
+						<div className='w-[20rem] text-sm ml-4'>
+							<p>
+								"SynergyAI will democratize the access to super
+								advanced DeFi analysis tools. <br /> It's a
+								total game-changer."
+							</p>
+							<br />
+							<p className='text-light-green'>
+								Jakub Stefanek, Founder & CEO at RoboHero
+							</p>
+						</div>
+					</div>
+					<div>
+						<h2 className='mt-8'>Our Partners and Advisors</h2>
+						<div className='mt-2 w-10 h-1 bg-light-green'></div>
+						{isDesktop ? (
+							<div className='flex w-full gap-6 items-center'>
+								<Image
+									className='w-32'
+									src={Certik}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-32'
+									src={Chainlink}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-24'
+									src={Bitget}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-20'
+									src={Parlour}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-24'
+									src={Wilner}
+									alt='partner logo'
+								/>
+							</div>
+						) : (
+							<ScrollContainer vertical={false} horizontal>
+							<div className='flex w-full gap-6 items-center'>
+								<Image
+									className='w-32'
+									src={Certik}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-32'
+									src={Chainlink}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-24'
+									src={Bitget}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-20'
+									src={Parlour}
+									alt='partner logo'
+								/>
+								<Image
+									className='w-24'
+									src={Wilner}
+									alt='partner logo'
+								/>
+							</div>
+							</ScrollContainer>
+						)}
+					</div>
+				</Container>
+			</section>
 		</>
 	)
 }
