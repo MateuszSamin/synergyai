@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
+import Roadmap from '../components/Roadmap'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -19,6 +19,8 @@ export default function Home() {
       
       <main className='bg-black w-screen h-screen flex flex-col justify-center items-center text-white gap-1'>
       <Navbar/>
+      
+      <Roadmap/>
         <h1 className='text-4xl'>SynergyAI.io</h1>
         <h2 className='text-xl'>Coming soon</h2>
         <Footer/>

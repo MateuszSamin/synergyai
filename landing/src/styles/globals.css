@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.scrollBar {
+
+    overflow-x: scroll;
+    margin: auto;
+  }
+  
+  .scrollBar::-webkit-scrollbar-track {
+    background-color: gray;
+  }
+  
+  .scrollBar::-webkit-scrollbar {
+    height: 2px;
+    width: 5px;
+    background-color: white;
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb {
+    height: 2px;
+    width: 20;
+    background: blue;   
+  }
+  
