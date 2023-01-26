@@ -4,24 +4,23 @@
 
 
 .scrollBar {
+  overflow-x: scroll;
+  margin: auto;
+}
 
-    overflow-x: scroll;
-    margin: auto;
-  }
-  
-  .scrollBar::-webkit-scrollbar-track {
-    background-color: gray;
-  }
-  
-  .scrollBar::-webkit-scrollbar {
-    height: 2px;
-    width: 5px;
-    background-color: white;
-  }
-  
-  .scrollBar::-webkit-scrollbar-thumb {
-    height: 2px;
-    width: 20;
-    background: blue;   
-  }
-  
+:-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.scrollBar::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  height: 5px;
+  width: 5px;
+  background: rgb(85,100,219);
+  background: linear-gradient(74deg, rgba(85,100,219,1) 0%, rgba(93,84,223,1) 39%, rgba(1,195,142,1) 100%);
+}

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../public/Logo.png'
 import { BsPlus } from 'react-icons/bs'
-import { FaLinkedinIn, FaTwitter } from 'react-icons/Fa'
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import Milestone from './Milestone'
 import ScrollContainer from 'react-indiana-drag-scroll'
 
@@ -27,12 +27,11 @@ const Roadmap = () => {
             <hr className='mr-24 border-t-2 w-[2rem] rounded-3xl border-gray-500 mt-4' />
           </div>
         </div>
-        <div className='overflow-x-scroll'>
-          <ScrollContainer>
-            <div className='w-[130rem] scrollBar  py-4 flex flex-row space-x-8'>
+        <div>
+          <ScrollContainer hideScrollbars={false} className='scrollBar z-40 max-w-[100%]'>
+            <div className='py-4 flex flex-row flex-nowrap space-x-8 z-10'>
               {milestones.map((subArray, j) => {
-                return (
-                  <Milestone milestoneTasks={milestones[j]} index={j + 1} />)
+                return ( <Milestone milestoneTasks={milestones[j]} index={j + 1} />)
               }
               )}
             </div>
@@ -78,6 +77,16 @@ let milestones = [
       done: true,
     },
     ,],
+  [
+    {
+      name: "Task number 3",
+      done: true,
+    },
+    {
+      name: "Doing homework",
+      done: false,
+    },
+  ],
   [
     {
       name: "Task number 3",

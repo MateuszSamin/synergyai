@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from './Container'
-import { FaLinkedinIn, FaTwitter, FaFacebookF } from 'react-icons/Fa'
+import { FaLinkedinIn, FaTwitter, FaFacebookF } from 'react-icons/fa'
 
 
 

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../public/Logo.png'
 import { BsPlus } from 'react-icons/bs'
-import { FaLinkedinIn, FaTwitter } from 'react-icons/Fa'
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 
 
