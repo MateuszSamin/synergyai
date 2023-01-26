@@ -22,8 +22,8 @@ const Navbar = (props: any) => {
             <Container className='justify-between bg-background lg:h-32 py-4 space-y-6 lg:space-y-0 text-white items-center flex flex-col lg:flex-row'>
                 <Image src={Logo} alt='logo' className='w-[15rem]' />
                 <div className='flex flex-row mx-auto space-x-8 text-sm'>
-                    {links.map((index) =>
-                        <Link href={index.link} >
+                    {links.map((index, i) =>
+                        <Link href={index.link} key={i}>
                             {index.subpage}
                         </Link>
                     )}
