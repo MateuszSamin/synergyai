@@ -5,6 +5,8 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Roadmap from '../components/Roadmap'
+import Team from '../components/TeamSection'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -17,9 +19,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className='bg-black w-screen h-screen flex flex-col justify-center items-center text-white gap-1'>
+      <main className='bg-black w-screen  flex flex-col justify-center items-center text-white gap-1'>
       <Navbar/>
-      
+      <Team/>
       <Roadmap/>
         <h1 className='text-4xl'>SynergyAI.io</h1>
         <h2 className='text-xl'>Coming soon</h2>

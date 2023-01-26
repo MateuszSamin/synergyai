@@ -9,11 +9,7 @@ import Milestone from './Milestone'
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 const Roadmap = () => {
-
-
-
-
-
+  
   return (
     <div className='w-full'>
       <Container className=' bg-background h-auto py-8  text-white  flex flex-col '>
