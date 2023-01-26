@@ -7,8 +7,14 @@ module.exports = {
     extend: {
       colors: {
         'background': '#001122',
-        'green': '#01C38E',
-        'purple': '#5564DB'
+        'dark-green': '#01C38E',
+        'light-green': '#16DDB6',
+        'purple': '#5564DB',
+        'paragraph': '#C2CBDC',
+      },
+
+      fontFamily: {
+        'sora': ['Sora', 'sans-serif'],
       }
     },
   },
