@@ -13,13 +13,13 @@ const Footer = (props: any) => {
                 <div className='w-[20rem] lg:w-[40rem] h-[1px] bg-gradient-to-l from-green  to-blue absolute top-0 left-0 right-0 mr-auto ml-auto'/>
                 <p className='w-[20rem] text-center  lg:text-left'>© by <span className='text-green'>SynergyAi</span>. All Rights Reserved.</p>
                 <div className='flex flex-row mx-auto space-x-8 text-sm items-center justify-center'>
-                    <a href="https://google.com" target="_blank">
+                    <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaLinkedinIn size={20} />
                     </a>
-                    <a href="https://google.com" target="_blank">
+                    <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaTwitter size={20} />
                     </a>
-                    <a href="https://google.com" target="_blank">
+                    <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaFacebookF size={20} />
                     </a>
                 </div>

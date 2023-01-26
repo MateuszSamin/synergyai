@@ -29,10 +29,10 @@ const Navbar = (props: any) => {
                     )}
                 </div>
                 <div className='flex flex-row items-center w-[15rem]  space-x-5'>
-                    <a href="https://google.com" target="_blank">
+                    <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaLinkedinIn size={20} />
                     </a>
-                    <a href="https://google.com" target="_blank">
+                    <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaTwitter size={20} />
                     </a>
                     <div className="h-12 w-[10rem] cursor-pointer rounded-3xl bg-gradient-to-bl from-green  to-blue p-[2px]">
