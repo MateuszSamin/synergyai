@@ -16,8 +16,6 @@ import Dot from '../../public/team/Dot.png'
 import Image from 'next/image'
 
 const TeamSection = () => {
-
-
     return (
         <div className='w-full'>
             <Container className='justify-between bg-background lg:h-auto py-24   text-white items-center flex flex-col '>

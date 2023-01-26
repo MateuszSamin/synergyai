@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Roadmap from '../components/Roadmap'
 import Team from '../components/TeamSection'
+import Info from '../components/Info'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,8 +22,8 @@ export default function Home() {
       
       <main className='bg-black w-screen  flex flex-col justify-center items-center text-white gap-1'>
       <Navbar/>
+      <Info/>
       <Team/>
-      <Roadmap/>
         <h1 className='text-4xl'>SynergyAI.io</h1>
         <h2 className='text-xl'>Coming soon</h2>
         <Footer/>
