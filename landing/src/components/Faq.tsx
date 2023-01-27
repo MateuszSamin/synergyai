@@ -47,10 +47,10 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
 					<FiArrowUpCircle
 						className={`${
 							open ? '' : 'rotate-180'
-						} transition duration-300 ease-in-out`}
+						} transition duration-300 ease-in-out w-10 h-10 shrink-0`}
 						size={32}
 					/>
-					<p className='ml-8'>{question}</p>
+					<p className='ml-8 text-left'>{question}</p>
 				</div>
 			</Disclosure.Button>
 			<Transition
@@ -62,7 +62,7 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
 				leaveTo='transform scale-95 opacity-0'>
 				<Disclosure.Panel
 					static
-					className='font-sora text-paragraph ml-16'>
+					className='font-sora text-paragraph ml-16 text-left'>
 					{answer}
 				</Disclosure.Panel>
 			</Transition>

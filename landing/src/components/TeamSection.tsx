@@ -17,8 +17,8 @@ import Image from 'next/image'
 
 const TeamSection = () => {
     return (
-        <div className='w-full bg-background font-sora'>
-            <Container className='justify-between bg-background lg:h-auto py-24   text-white items-center flex flex-col '>
+        <div className='w-full bg-[#000F1E] font-sora'>
+            <Container className='justify-between lg:h-auto py-24   text-white items-center flex flex-col '>
                 <p className='text-green tracking-widest text-sm'>THE TEAM</p>
                 <p className='text-white tracking-wide text-4xl mt-12 font-semibold'>Who{"'"}s working on this <span className='text-green'>stuff</span>?</p>
                 <div className='flex flex-col 2xl:flex-row mt-20  mx-auto '>
