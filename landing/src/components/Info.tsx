@@ -12,7 +12,7 @@ const Info = () => {
             <Container className=' bg-background h-auto py-8  text-white  flex flex-col '>
                 <div className='flex flex-col lg:flex-row items-center'>
                     <div className='space-y-6 flex-row' >
-                        <p className='text-green tracking-widest text-sm text-center lg:text-left'>DREAM TEAM</p>
+                        <p className='text-green tracking-widest text-sm text-center lg:text-left'>ZUPA DUPA</p>
                         <p className='text-white tracking-wide text-4xl  text-center lg:text-left'>We bring everything that{"'"}s  <br /> required to  <span className='text-green'>build apps</span></p>
                         <p className='text-white tracking-widest text-sm  text-center lg:text-left'>We specialize in creating visual identities for products and <br /> brands in your company</p>
                     </div>
