@@ -75,9 +75,7 @@ export default function Home() {
 					<span className='text-light-green'>rugged</span> again.
 				</h1>
 				<p className='relative z-20 w-8/12 md:w-1/2 text-center mt-8 leading-loose text-paragraph'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consectetur nam, aliquid voluptatum sint praesentium
-					architecto delectus!
+					SynergyAI is the AI toolkit for DeFi. We provide a suite of tools to help you make the best decisions in the DeFi space.
 				</p>
 				<div className='px-4 flex gap-6 md:gap-10 relative z-20 mt-8'>
 					<button className='text-base md:text-lg text-black rounded-full px-10 py-4 border-[1px] border-light-green bg-gradient-to-br from-white via-white to-light-green'>
@@ -96,9 +94,9 @@ export default function Home() {
 						</div>
 						<div className='w-[20rem] text-sm ml-4'>
 							<p>
-								{'"'}SynergyAI will democratize the access to super
-								advanced DeFi analysis tools. <br /> It{"'"}s a
-								total game-changer.{'"'}
+								{'"'}SynergyAI will democratize the access to
+								super-advanced DeFi analysis tools. <br /> It
+								{"'"}s a total game-changer.{'"'}
 							</p>
 							<br />
 							<p className='text-light-green'>
@@ -138,7 +136,7 @@ export default function Home() {
 								/>
 							</div>
 						) : (
-							<ScrollContainer vertical={false} horizontal>
+							<ScrollContainer vertical={false} horizontal className='overflow-hidden'>
 								<div className='flex w-full gap-6 items-center'>
 									<Image
 										className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
@@ -179,7 +177,11 @@ export default function Home() {
 			<section className='relative bg-background font-sora'>
 				<Roadmap />
 				<Footer />
-				<Image src={PurpelFlare} alt='purpleflare' className='absolute bottom-0 z-10' />
+				<Image
+					src={PurpelFlare}
+					alt='purpleflare'
+					className='absolute bottom-0 z-10'
+				/>
 			</section>
 		</>
 	)

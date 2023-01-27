@@ -24,7 +24,7 @@ const Roadmap = () => {
           </div>
         </div>
         <div>
-          <ScrollContainer hideScrollbars={false} className='scrollBar z-40 max-w-[100%]'>
+          <ScrollContainer hideScrollbars={false} className='hideScroll z-40 max-w-[100%]'>
             <div className='py-4 flex flex-row flex-nowrap space-x-8 z-40'>
               {milestones.map((subArray, j) => {
                 return (<Milestone milestoneTasks={milestones[j]} index={j + 1} key={j} />)

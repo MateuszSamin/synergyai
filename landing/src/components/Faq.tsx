@@ -19,12 +19,12 @@ const Faq = () => {
 				<h1 className='mt-6 text-5xl font-semibold mb-10'>
 					Do you have any questions?
 				</h1>
-				<FaqItem question='KUPA DUPA' answer='askdaskljd' />
-				<FaqItem question='KUPA DUPA' answer='askdaskljd' />
-				<FaqItem question='KUPA DUPA' answer='askdaskljd' />
-				<FaqItem question='KUPA DUPA' answer='askdaskljd' />
-				<FaqItem question='KUPA DUPA' answer='askdaskljd' />
-				<FaqItem question='KUPA DUPA' answer='askdaskljd' />
+				<FaqItem question='When will the platform be available?' answer='We are planning to ship alpha version of the platform in Q4 2023.' />
+				<FaqItem question='Does the team have expercience in blockchain / AI?' answer='All members of the team have past experience in blockchain. The management has previosly founded a blockchain software development company. They also have expertise in AI, as they also have work experience in this field.' />
+				<FaqItem question='Can I join you?' answer={`We're always happy to work with talented people. Contact us at contact@synergyai.io and let's talk!`} />
+				<FaqItem question='Can I invest?' answer={`We are currently during our seed fundraising round. Contact us at contact@synergyai.io to learn about the $SYNAI token.`} />
+				<FaqItem question='What blockchain are you using?' answer='We are working with the Ethereum blockchain, but choose to remain blockchain agnostic. We will later expand our platform to support other blockchains.' />
+				<FaqItem question='How can I contact you?' answer='Email us at contact@synergyai.io or text CEO directly on Telegram @karolproksa.' />
 			</Container>
 		</div>
 	)
@@ -47,7 +47,7 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
 					<FiArrowUpCircle
 						className={`${
 							open ? '' : 'rotate-180'
-						} transition duration-300`}
+						} transition duration-300 ease-in-out`}
 						size={32}
 					/>
 					<p className='ml-8'>{question}</p>

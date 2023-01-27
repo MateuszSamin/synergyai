@@ -6,7 +6,7 @@ const Milestone = ({ milestoneTasks, ...props }: any) => {
 
 
     return (
-        <div className='min-w-[20rem] h-[30rem] bg-black rounded-3xl flex-col px-6 py-6'>
+        <div className='min-w-[20rem] h-[30rem] bg-gradient-to-b from-black to-transparent rounded-3xl flex-col px-6 py-6'>
             <hr className='mr-auto border-t-2 w-[2rem] rounded-3xl border-green mt-4 ' />
             <p className='mt-4 text-2xl'>Milestone {props.index} </p>
             <div className='space-y-4 mt-6'>
