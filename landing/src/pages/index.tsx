@@ -96,9 +96,9 @@ export default function Home() {
 						</div>
 						<div className='w-[20rem] text-sm ml-4'>
 							<p>
-								"SynergyAI will democratize the access to super
-								advanced DeFi analysis tools. <br /> It's a
-								total game-changer."
+								{'"'}SynergyAI will democratize the access to super
+								advanced DeFi analysis tools. <br /> It{"'"}s a
+								total game-changer.{'"'}
 							</p>
 							<br />
 							<p className='text-light-green'>
