@@ -17,10 +17,10 @@ import Image from 'next/image'
 
 const TeamSection = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full bg-background'>
             <Container className='justify-between bg-background lg:h-auto py-24   text-white items-center flex flex-col '>
                 <p className='text-green tracking-widest text-sm'>DREAM TEAM</p>
-                <p className='text-white tracking-wide text-4xl mt-12'>Who{"'"}s working on this <span className='text-green'>suff</span>?</p>
+                <p className='text-white tracking-wide text-4xl mt-12'>Who{"'"}s working on this <span className='text-green'>stuff</span>?</p>
                 <div className='flex flex-col 2xl:flex-row mt-20  mx-auto '>
                     <div className='flex flex-col mx-auto lg:flex-row space-y-6 lg:space-y-0 lg:space-x-10'>
                         {DevTeam.slice(0, 3).map((member, index) => {

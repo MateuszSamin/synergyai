@@ -17,7 +17,9 @@ import Faq from '@/components/Faq'
 import Footer from '@/components/Footer'
 import Info from '@/components/Info'
 import TeamSection from '@/components/TeamSection'
-
+import Navbar from '../components/Navbar'
+import Roadmap from '../components/Roadmap'
+import PurpelFlare from '../../public/PurpleFlare.png'
 export default function Home() {
 	const isDesktop = useMediaQuery('(min-width: 768px)')
 
@@ -41,8 +43,9 @@ export default function Home() {
 					rel='stylesheet'
 				/>
 			</Head>
-			<Navbar />
-			<main className='bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white gap-1'>
+
+			<main className='bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white -z-10gap-1'>
+				<Navbar />
 				<Image
 					draggable={false}
 					className='z-10 absolute w-11/12 md:w-8/12'
@@ -173,7 +176,11 @@ export default function Home() {
 			<section className='bg-background h-screen'>
 				<Faq />
 			</section>
-			<Footer />
+			<section className='relative bg-background'>
+				<Roadmap />
+				<Footer />
+				<Image src={PurpelFlare} alt='purpleflare' className='absolute bottom-0 z-10' />
+			</section>
 		</>
 	)
 }

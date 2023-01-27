@@ -1,14 +1,15 @@
 import React from 'react'
+import Image from 'next/image'
 import Container from './Container'
 import { FaLinkedinIn, FaTwitter, FaFacebookF } from 'react-icons/fa'
-
+import PurpleFlare from "../../public/PurpleFlare.png"
 
 
 const Footer = (props: any) => {
 
 
     return (
-        <div className='w-full'>
+        <div className='w-full relative  z-20 '>
             <Container className='justify-between lg:h-40 relative py-4 space-y-6 lg:space-y-0  text-white items-center flex flex-col-reverse lg:flex-row'>
                 <div className='w-[20rem] lg:w-[40rem] h-[1px] bg-gradient-to-l from-green  to-blue absolute top-0 left-0 right-0 mr-auto ml-auto'/>
                 <p className='w-[20rem] text-center  lg:text-left'>© by <span className='text-green'>SynergyAi</span>. All Rights Reserved.</p>

@@ -8,7 +8,7 @@ import { BiBriefcaseAlt } from 'react-icons/bi'
 const Info = () => {
 
     return (
-        <div className='w-full h-auto bg-black relative rounded-3xl flex-col '>
+        <div className='w-full bg-background relative flex-col z-30 '>
             <Container className=' bg-background h-auto py-8  text-white  flex flex-col '>
                 <div className='flex flex-col lg:flex-row items-center'>
                     <div className='space-y-6 flex-row' >
@@ -29,7 +29,7 @@ const Info = () => {
                     <Image src={Tech} alt='galaxy' className='w-[20rem] 2xl:w-[30rem] mt-10  lg:mt-0 lg:mr-auto relative ' />
                     <div className='space-y-6 flex flex-col' >
                         <p className='text-white tracking-wide text-4xl  text-center lg:text-left'>So how are we   <span className='text-green'>going to do <br /> all of this?</span></p>
-                        <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-2  w-full lg:w-[35rem] justify-center 2xl:w-[40rem] lg:gap-4 2xl:gap-6'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-2  w-full lg:w-[35rem] justify-center 2xl:w-[40rem] lg:gap-4 2xl:gap-6'>
                             <div className='w-[15rem] mx-auto'>
                                 <div className='flex flex-row items-center lg:justify-start justify-center space-x-2 ' >
                                     <BiBriefcaseAlt size={25} /> <p>Set up Wallet</p>

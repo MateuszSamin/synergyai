@@ -8,7 +8,7 @@ import { FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 
 
-const Navbar = (props: any) => {
+const Navbar = () => {
 
     const links = [
         { subpage: "Product", link: "/" },
@@ -18,13 +18,13 @@ const Navbar = (props: any) => {
     ]
 
     return (
-        <div className='w-full'>
-            <Container className='justify-between bg-background lg:h-32 py-4 space-y-6 lg:space-y-0 text-white items-center flex flex-col lg:flex-row'>
+        <div className='bg-transparent w-full z-20 absolute top-0'>
+            <Container className='justify-between lg:h-32 py-4  space-y-6 lg:space-y-0 text-white items-center flex flex-col lg:flex-row'>
                 <Image src={Logo} alt='logo' className='w-[15rem]' />
-                <div className='flex flex-row mx-auto space-x-8 text-sm'>
+                <div className='flex flex-row mx-auto space-x-8 text-lg'>
                     {links.map((index, i) =>
-                        <Link href={index.link} key={i}>
-                            {index.subpage}
+                        <Link href={index.link} key={i} className="cursor-pointer">
+                            <p className='cursor-pointer'>{index.subpage}</p>
                         </Link>
                     )}
                 </div>
@@ -44,6 +44,7 @@ const Navbar = (props: any) => {
                 </div>
             </Container>
         </div>
+
     )
 }
 
