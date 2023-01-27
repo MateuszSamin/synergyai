@@ -119,11 +119,11 @@ export default function Home() {
 									src={Chainlink}
 									alt='partner logo'
 								/>
-								<Image
+								{/* <Image
 									className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Bitget}
 									alt='partner logo'
-								/>
+								/> */}
 								<Image
 									className='w-20 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Parlour}
@@ -148,11 +148,11 @@ export default function Home() {
 										src={Chainlink}
 										alt='partner logo'
 									/>
-									<Image
+									{/* <Image
 										className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 										src={Bitget}
 										alt='partner logo'
-									/>
+									/> */}
 									<Image
 										className='w-20 opacity-50 hover:opacity-100 duration-300 transition'
 										src={Parlour}
