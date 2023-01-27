@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import Flare from '../../public/flare.png'
 import BgLogo from '../../public/bgLogo.png'
 import Dots1 from '../../public/dots/1.png'
@@ -16,6 +14,9 @@ import Loco from '../../public/loco.png'
 import useMediaQuery from '../hooks/useMediaQuery'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import Faq from '@/components/Faq'
+import Footer from '@/components/Footer'
+import Info from '@/components/Info'
+import TeamSection from '@/components/TeamSection'
 
 export default function Home() {
 	const isDesktop = useMediaQuery('(min-width: 768px)')
@@ -40,6 +41,7 @@ export default function Home() {
 					rel='stylesheet'
 				/>
 			</Head>
+			<Navbar />
 			<main className='bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white gap-1'>
 				<Image
 					draggable={false}
@@ -166,9 +168,12 @@ export default function Home() {
 					</div>
 				</Container>
 			</section>
+			<Info />
+			<TeamSection />
 			<section className='bg-background h-screen'>
 				<Faq />
 			</section>
+			<Footer />
 		</>
 	)
 }
