@@ -176,7 +176,7 @@ export default function Home() {
 			<section className='bg-background h-screen'>
 				<Faq />
 			</section>
-			<section className='relative bg-background'>
+			<section className='relative bg-background font-sora'>
 				<Roadmap />
 				<Footer />
 				<Image src={PurpelFlare} alt='purpleflare' className='absolute bottom-0 z-10' />

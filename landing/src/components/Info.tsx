@@ -8,7 +8,7 @@ import { BiBriefcaseAlt } from 'react-icons/bi'
 const Info = () => {
 
     return (
-        <div className='w-full bg-background relative flex-col z-30 '>
+        <div className='w-full bg-background relative flex-col z-30 font-sora  '>
             <Container className=' bg-background h-auto py-8  text-white  flex flex-col '>
                 <div className='flex flex-col lg:flex-row items-center'>
                     <div className='space-y-6 flex-row' >

@@ -11,9 +11,9 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 const Roadmap = () => {
 
   return (
-    <div className=' relative z-20'>
+    <div className=' relative z-20 '>
       <Container className='h-auto py-8  text-white  flex flex-col '>
-        <p className='text-green tracking-widest'>ROADMAP</p>
+        <p className='text-green tracking-widest font-sora'>ROADMAP</p>
         <div className='flex lg:flex-row mt-4 w-full z-40 relative  flex-col '>
           <p className='text-white tracking-wide text-4xl z-10'>So, how are we <span className='text-green'>going to do all of this?</span></p>
           <div className='flex flex-row lg:ml-auto'>

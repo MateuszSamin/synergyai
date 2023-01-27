@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 const TeamSection = () => {
     return (
-        <div className='w-full bg-background'>
+        <div className='w-full bg-background font-sora'>
             <Container className='justify-between bg-background lg:h-auto py-24   text-white items-center flex flex-col '>
                 <p className='text-green tracking-widest text-sm'>DREAM TEAM</p>
                 <p className='text-white tracking-wide text-4xl mt-12'>Who{"'"}s working on this <span className='text-green'>stuff</span>?</p>
@@ -65,7 +65,7 @@ const TeamSection = () => {
                                         <Image src={advisor.img} alt={advisor.name} className='w-[85%]' />
                                     </div>
                                 </div>
-                                <p className='text-white mt-4 text-2xl'>{advisor.name}</p>
+                                <p className='text-white mt-4 text-xl'>{advisor.name}</p>
                                 <p className='text-green font-lg'>Advisor</p>
                             </div>
                         );
