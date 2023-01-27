@@ -7,7 +7,7 @@ import { FiArrowUpCircle } from 'react-icons/fi'
 
 const Faq = () => {
 	return (
-		<div className='bg-background text-white font-sora'>
+		<div className='bg-background text-white font-sora relative z-30'>
 			<Image
 				className='absolute z-10 right-0 w-5/12 transform -scale-x-[1]'
 				src={Logo}
