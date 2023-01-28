@@ -51,75 +51,96 @@ const Roadmap = () => {
 
 let milestones = [
 	[
+		
 		{
-			name: 'Task number 12',
+			name: 'Project conceptualization',
 			done: true,
 		},
 		{
-			name: 'Task number 12',
+			name: 'Team assembly',
 			done: true,
 		},
 		{
-			name: 'Doing homework',
-			done: false,
+			name: 'Tokenization and funding plan',
+			done: true,
 		},
 	],
 	[
 		{
-			name: 'Task number 223',
+			name: 'Landing page creation',
 			done: true,
 		},
 		{
-			name: 'Doing hask23r',
+			name: 'Advisors and Partners assembly',
+			done: true,
+		},
+
+		{
+			name: 'Launch of token',
 			done: false,
 		},
 		{
-			name: 'Task numb3rer 4',
-			done: true,
-		},
-		{
-			name: 'Task num2ber 4',
-			done: true,
+			name: 'Seed Round',
+			done: false,
 		},
 		,
 	],
 	[
 		{
-			name: 'Task number 3',
-			done: true,
+			name: 'Social media launch',
+			done: false,
 		},
 		{
-			name: 'Doing homework',
+			name: 'Desiging the look and feel of the platform',
+			done: false,
+		},
+		{
+			name: 'Designing gamification processes',
+			done: false,
+		},
+
+		{
+			name: 'Gathering feedback from organic community',
 			done: false,
 		},
 	],
 	[
 		{
-			name: 'Task number 3',
-			done: true,
+			name: 'Synergy TOOLS launch',
+			done: false,
 		},
 		{
-			name: 'Doing homework',
+			name: 'Synergy SAFU launch',
+			done: false,
+		},
+		{
+			name: 'Synergy REAL YIELD launch',
+			done: false,
+		},
+		{
+			name: 'Broad marketing campaign',
+			done: false,
+		},
+		{
+			name: 'Q&A and feedback session with the core team',
 			done: false,
 		},
 	],
 	[
 		{
-			name: 'Task num34ber 4',
-			done: true,
-		},
-		{
-			name: 'Doing hom2ework',
+			name: 'Updating the platform accordingly to community feedback round',
 			done: false,
 		},
-	],
-	[
 		{
-			name: 'Task nu234mber 4',
-			done: true,
+			name: 'Synergy MEME GEN launch',
+			done: false,
 		},
 		{
-			name: 'Doinafg homework',
+			name: 'Synergy FRONTRUNNER launch',
+			done: false,
+		},
+		{
+			name: 'Synergy AUDIT launch',
 			done: false,
 		},
 	],
