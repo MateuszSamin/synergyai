@@ -10,7 +10,7 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 
 const Roadmap = () => {
   return (
-    <div className='relative z-20 h-[50rem] pt-62 sm:pt-0'>
+    <div className='relative z-20 h-[50rem]'>
       <Container className='h-auto py-8 text-white flex flex-col '>
         <p className='text-green tracking-widest font-sora'>ROADMAP</p>
         <div className='flex lg:flex-row mt-4 w-full z-40 relative  flex-col '>

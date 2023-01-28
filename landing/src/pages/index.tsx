@@ -174,7 +174,7 @@ export default function Home() {
 			<section className='bg-background h-auto'>
 				<Faq />
 			</section>
-			<section className='relative bg-background font-sora'>
+			<section className='relative bg-background h-auto pt-24 font-sora'>
 				<Roadmap />
 				<Footer />
 				<Image
