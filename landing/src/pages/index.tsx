@@ -171,7 +171,7 @@ export default function Home() {
 			</section>
 			<Info />
 			<TeamSection />
-			<section className='bg-background h-screen'>
+			<section className='bg-background h-auto'>
 				<Faq />
 			</section>
 			<section className='relative bg-background font-sora'>
