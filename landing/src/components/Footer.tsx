@@ -16,7 +16,7 @@ const Footer = (props: any) => {
                 Made by 👨 and 🤖. <br />
                  All Rights Reserved.</p>
                 <div className='flex flex-row mx-auto space-x-8 text-sm items-center justify-center'>
-                    <a href="https://google.com" target="_blank" rel="noreferrer">
+                    {/* <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaLinkedinIn size={20} />
                     </a>
                     <a href="https://google.com" target="_blank" rel="noreferrer">
@@ -24,7 +24,7 @@ const Footer = (props: any) => {
                     </a>
                     <a href="https://google.com" target="_blank" rel="noreferrer">
                         <FaFacebookF size={20} />
-                    </a>
+                    </a> */}
                 </div>
 
                 <p className='cursor-pointer text-center lg:text-right w-[20rem] mt-4 lg:mt-0' onClick={() => {

@@ -26,7 +26,7 @@ const Navbar = () => {
                         </Link>
                     )} */}
 				</div>
-				<div className='flex flex-row items-center w-[15rem]  space-x-5'>
+				{/* <div className='flex flex-row items-center w-[15rem]  space-x-5'>
 					<a
 						href='https://google.com'
 						target='_blank'
@@ -45,7 +45,7 @@ const Navbar = () => {
 							<BsPlus size={30} className='ml-2' />
 						</div>
 					</button>
-				</div>
+				</div> */}
 			</Container>
 		</div>
 	)

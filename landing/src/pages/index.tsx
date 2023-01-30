@@ -78,11 +78,11 @@ export default function Home() {
 					SynergyAI is the AI toolkit for DeFi. We provide a suite of tools to help you make the best decisions in the DeFi space.
 				</p>
 				<div className='px-4 flex gap-6 md:gap-10 relative z-20 mt-8'>
-					<button className='text-base md:text-lg text-black rounded-full px-10 py-4 border-[1px] border-light-green bg-gradient-to-br from-white via-white to-light-green'>
+					{/* <button className='text-base md:text-lg text-black rounded-full px-10 py-4 border-[1px] border-light-green bg-gradient-to-br from-white via-white to-light-green'>
 						Whitepaper
-					</button>
-					<button className='text-base md:text-lg text-white rounded-full px-10 py-4 border-[1px] border-light-green backdrop-blur-sm bg-white/10'>
-						Play Video
+					</button> */}
+					<button disabled className='text-base md:text-lg text-white rounded-full px-10 py-4 border-[1px] border-light-green backdrop-blur-sm bg-white/10'>
+						Coming soon...
 					</button>
 				</div>
 			</main>
