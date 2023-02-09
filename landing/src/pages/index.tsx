@@ -114,11 +114,11 @@ export default function Home() {
 									src={Certik}
 									alt='partner logo'
 								/>
-								<Image
+								{/* <Image
 									className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Chainlink}
 									alt='partner logo'
-								/>
+								/> */}
 								{/* <Image
 									className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Bitget}
@@ -143,11 +143,11 @@ export default function Home() {
 										src={Certik}
 										alt='partner logo'
 									/>
-									<Image
+									{/* <Image
 										className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
 										src={Chainlink}
 										alt='partner logo'
-									/>
+									/> */}
 									{/* <Image
 										className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 										src={Bitget}
