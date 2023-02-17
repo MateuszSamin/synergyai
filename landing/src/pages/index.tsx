@@ -49,7 +49,7 @@ export default function Home() {
 				/>
 			</Head>
 
-			<main className='bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white -z-10gap-1'>
+			<main className='bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white'>
 				<Navbar />
 				<Image
 					draggable={false}
@@ -83,9 +83,8 @@ export default function Home() {
 					SynergyAI is the AI toolkit for DeFi. We provide a suite of
 					tools to help you make the best decisions in the DeFi space.
 				</p>
-				<div className='px-4 flex gap-6 md:gap-10 relative z-20 mt-8'>
-					<WaitlistSignup />
-				</div>
+
+				<WaitlistSignup />
 			</main>
 			<section className='pt-24 md:pt-0 bg-background font-sora text-white'>
 				<Container className='flex flex-col xl:flex-row justify-between'>
@@ -180,6 +179,10 @@ export default function Home() {
 			</section>
 			<section className='relative bg-background h-auto pt-24 font-sora'>
 				<Roadmap />
+				<h1 className='text-white relative z-20 text-5xl px-8 md:text-6xl font-semibold text-center'>
+					Looking forward to it?
+				</h1>
+				<WaitlistSignup />
 				<Footer />
 				<Image
 					src={PurpelFlare}

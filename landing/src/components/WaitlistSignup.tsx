@@ -7,10 +7,10 @@ const WaitlistSignup = () => {
 	const [email, setEmail] = useState('')
 
 	return (
-		<form action={`/api/waitlist_signup?email=${email}`} method='POST'>
+		<form className='relative my-8 z-30 w-10/12 md:w-auto mx-auto flex justify-center flex-col md:flex-row gap-8' action={`/api/waitlist_signup?email=${email}`} method='POST'>
 			<input
 				type='text'
-				className='rounded-full py-4 border-[1px] px-10 bg-[#17293C] backdrop-blur-xl mr-4 opacity-75 text-white'
+				className='rounded-full py-4 border-[1px] px-10 bg-[#17293C] backdrop-blur-xl opacity-75 text-white'
 				value={email}
 				placeholder='Enter your email'
 				onChange={(e) => setEmail(e.target.value)}
