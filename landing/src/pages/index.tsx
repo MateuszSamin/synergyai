@@ -20,6 +20,11 @@ import TeamSection from '@/components/TeamSection'
 import Navbar from '../components/Navbar'
 import Roadmap from '../components/Roadmap'
 import PurpelFlare from '../../public/PurpleFlare.png'
+import email_signup from './api/waitlist_signup'
+import { useRouter } from 'next/router'
+import { useState } from 'react'
+import WaitlistSignup from '@/components/WaitlistSignup'
+
 export default function Home() {
 	const isDesktop = useMediaQuery('(min-width: 768px)')
 
@@ -75,15 +80,11 @@ export default function Home() {
 					<span className='text-light-green'>rugged</span> again.
 				</h1>
 				<p className='relative z-20 w-8/12 md:w-1/2 text-center mt-8 leading-loose text-paragraph'>
-					SynergyAI is the AI toolkit for DeFi. We provide a suite of tools to help you make the best decisions in the DeFi space.
+					SynergyAI is the AI toolkit for DeFi. We provide a suite of
+					tools to help you make the best decisions in the DeFi space.
 				</p>
 				<div className='px-4 flex gap-6 md:gap-10 relative z-20 mt-8'>
-					{/* <button className='text-base md:text-lg text-black rounded-full px-10 py-4 border-[1px] border-light-green bg-gradient-to-br from-white via-white to-light-green'>
-						Whitepaper
-					</button> */}
-					<button disabled className='text-base md:text-lg text-white rounded-full px-10 py-4 border-[1px] border-light-green backdrop-blur-sm bg-white/10'>
-						Coming soon...
-					</button>
+					<WaitlistSignup />
 				</div>
 			</main>
 			<section className='pt-24 md:pt-0 bg-background font-sora text-white'>
@@ -136,7 +137,10 @@ export default function Home() {
 								/>
 							</div>
 						) : (
-							<ScrollContainer vertical={false} horizontal className='overflow-hidden'>
+							<ScrollContainer
+								vertical={false}
+								horizontal
+								className='overflow-hidden'>
 								<div className='flex w-full gap-6 items-center'>
 									<Image
 										className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
