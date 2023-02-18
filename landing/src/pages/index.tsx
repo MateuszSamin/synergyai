@@ -1,29 +1,24 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Flare from '../../public/flare.png'
-import BgLogo from '../../public/bgLogo.png'
-import Dots1 from '../../public/dots/1.png'
-import Dots2 from '../../public/dots/2.png'
-import Container from '@/components/Container'
-import Bitget from '../../public/logos/bitget.png'
-import Certik from '../../public/logos/certik.webp'
-import Chainlink from '../../public/logos/chainlink.png'
-import Parlour from '../../public/logos/parlour.png'
-import Wilner from '../../public/logos/wilner.png'
-import Loco from '../../public/loco.png'
-import useMediaQuery from '../hooks/useMediaQuery'
-import ScrollContainer from 'react-indiana-drag-scroll'
-import Faq from '@/components/Faq'
-import Footer from '@/components/Footer'
-import Info from '@/components/Info'
-import TeamSection from '@/components/TeamSection'
-import Navbar from '../components/Navbar'
-import Roadmap from '../components/Roadmap'
-import PurpelFlare from '../../public/PurpleFlare.png'
-import email_signup from './api/waitlist_signup'
-import { useRouter } from 'next/router'
-import { useState } from 'react'
-import WaitlistSignup from '@/components/WaitlistSignup'
+import Container from '@/components/Container';
+import Faq from '@/components/Faq';
+import Footer from '@/components/Footer';
+import Info from '@/components/Info';
+import TeamSection from '@/components/TeamSection';
+import WaitlistSignup from '@/components/WaitlistSignup';
+import Head from 'next/head';
+import Image from 'next/image';
+import ScrollContainer from 'react-indiana-drag-scroll';
+import BgLogo from '../../public/bgLogo.png';
+import Dots1 from '../../public/dots/1.png';
+import Dots2 from '../../public/dots/2.png';
+import Flare from '../../public/flare.png';
+import Loco from '../../public/loco.png';
+import Certik from '../../public/logos/certik.webp';
+import Parlour from '../../public/logos/parlour.png';
+import Wilner from '../../public/logos/wilner.png';
+import PurpelFlare from '../../public/PurpleFlare.png';
+import Navbar from '../components/Navbar';
+import Roadmap from '../components/Roadmap';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 export default function Home() {
 	const isDesktop = useMediaQuery('(min-width: 768px)')
