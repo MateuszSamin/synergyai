@@ -17,7 +17,9 @@ const Navbar = () => {
 	return (
 		<div className='bg-transparent w-full z-20 relative md:absolute md:top-0'>
 			<Container className='justify-between lg:h-32 py-4  space-y-6 lg:space-y-0 text-white items-center flex flex-col lg:flex-row'>
-				<Image src={Logo} alt='logo' className='w-[15rem]' />
+				<Link href='/'>
+					<Image src={Logo} alt='logo' className='w-[15rem]' />
+				</Link>
 				<div className='flex flex-row mx-auto space-x-8 text-lg'>
 					{/* @dev Temporarily removed mapping, because there are no such subpages at this time. */}
 					{/* {links.map((index, i) =>
