@@ -1,13 +1,14 @@
-import useMediaQuery from '@/hooks/useMediaQuery'
-import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+import { useState } from 'react';
 
 const WaitlistSignup = () => {
-	const router = useRouter()
-	const [email, setEmail] = useState('')
+	const [email, setEmail] = useState('');
 
 	return (
-		<form className='relative my-8 z-30 w-10/12 md:w-auto mx-auto flex justify-center flex-col md:flex-row gap-8' action={`/api/waitlist_signup?email=${email}`} method='POST'>
+		<form
+			className='relative my-8 z-30 w-10/12 md:w-auto mx-auto flex justify-center flex-col md:flex-row gap-8'
+			action={`/api/waitlist_signup?email=${email}`}
+			method='POST'
+		>
 			<input
 				type='text'
 				className='rounded-full py-4 border-[1px] px-10 bg-[#17293C] backdrop-blur-xl opacity-75 text-white'
@@ -22,7 +23,7 @@ const WaitlistSignup = () => {
 				Join waitlist
 			</button>
 		</form>
-	)
-}
+	);
+};
 
-export default WaitlistSignup
+export default WaitlistSignup;
