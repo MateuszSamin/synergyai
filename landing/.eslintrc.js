@@ -6,7 +6,11 @@ module.exports = {
   },
   parserOptions: { ecmaVersion: 8 },
   ignorePatterns: ["node_modules/*", ".next/*", ".out/*", "!.prettierrc.js"],
-  extends: ["eslint:recommended", "next/core-web-vitals"],
+  extends: [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+  ],
   overrides: [
     {
       files: ["**/*.ts", "**/*.tsx"],
@@ -23,7 +27,6 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
-        "plugin:prettier/recommended",
       ],
       rules: {
         "react/prop-types": "off",
@@ -31,7 +34,6 @@ module.exports = {
         "jsx-a11y/anchor-is-valid": "off",
         "@typescript-eslint/no-unused-vars": ["error"],
         "@typescript-eslint/explicit-function-return-type": "off",
-        "prettier/prettier": ["error", {}, { usePrettierrc: true }],
       },
     },
   ],

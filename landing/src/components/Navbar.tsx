@@ -1,19 +1,9 @@
-import React from "react";
-import Container from "./Container";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/Logo.png";
-import { BsPlus } from "react-icons/bs";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Container from "./Container";
 
 const Navbar = () => {
-  const links = [
-    { subpage: "Product", link: "/" },
-    { subpage: "Team", link: "/" },
-    { subpage: "Doc.", link: "/" },
-    { subpage: "Contact", link: "/" },
-  ];
-
   return (
     <div className="bg-transparent w-full z-20 relative md:absolute md:top-0">
       <Container className="justify-between lg:h-32 py-4  space-y-6 lg:space-y-0 text-white items-center flex flex-col lg:flex-row">

@@ -27,18 +27,6 @@ export default function Home() {
     <>
       <Head>
         <title>SynergyAI</title>
-        <meta
-          name="description"
-          content="Never get rugged again. The AI toolkit for DeFi."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <main className="bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white">
@@ -68,11 +56,12 @@ export default function Home() {
           alt="dots"
         />
         <h1 className="relative z-20 text-5xl md:text-7xl font-semibold text-center">
-          Never get <br /> <span className="text-light-green">rugged</span> again.
+          Never get <br /> <span className="text-light-green">rugged</span>{" "}
+          again.
         </h1>
         <p className="relative z-20 w-8/12 md:w-1/2 text-center mt-8 leading-loose text-paragraph">
-          SynergyAI is the AI toolkit for DeFi. We provide a suite of tools to help you
-          make the best decisions in the DeFi space.
+          SynergyAI is the AI toolkit for DeFi. We provide a suite of tools to
+          help you make the best decisions in the DeFi space.
         </p>
 
         <WaitlistSignup />
@@ -85,8 +74,8 @@ export default function Home() {
             </div>
             <div className="w-[20rem] text-sm ml-4">
               <p>
-                {'"'}SynergyAI will democratize the access to super-advanced DeFi analysis
-                tools. <br /> It
+                {'"'}SynergyAI will democratize the access to super-advanced
+                DeFi analysis tools. <br /> It
                 {"'"}s a total game-changer.{'"'}
               </p>
               <br />
@@ -127,7 +116,11 @@ export default function Home() {
                 />
               </div>
             ) : (
-              <ScrollContainer vertical={false} horizontal className="overflow-hidden">
+              <ScrollContainer
+                vertical={false}
+                horizontal
+                className="overflow-hidden"
+              >
                 <div className="flex w-full gap-6 items-center">
                   <Image
                     className="w-32 opacity-50 hover:opacity-100 duration-300 transition"
@@ -172,7 +165,11 @@ export default function Home() {
         </h1>
         <WaitlistSignup />
         <Footer />
-        <Image src={PurpelFlare} alt="purpleflare" className="absolute bottom-0 z-10" />
+        <Image
+          src={PurpelFlare}
+          alt="purpleflare"
+          className="absolute bottom-0 z-10"
+        />
       </section>
     </>
   );

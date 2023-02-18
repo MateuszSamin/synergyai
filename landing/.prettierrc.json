@@ -6,5 +6,5 @@
   "jsxSingleQuote": false,
   "trailingComma": "es5",
   "arrowParens": "avoid",
-  "printWidth": 90
+  "printWidth": 80
 }

@@ -1,12 +1,6 @@
-import React from "react";
-import Container from "./Container";
-import Image from "next/image";
-import Link from "next/link";
-import Logo from "../../public/Logo.png";
-import { BsPlus } from "react-icons/bs";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import Milestone from "./Milestone";
 import ScrollContainer from "react-indiana-drag-scroll";
+import Container from "./Container";
+import Milestone from "./Milestone";
 
 const Roadmap = () => {
   return (
@@ -15,7 +9,8 @@ const Roadmap = () => {
         <p className="text-green tracking-widest font-sora">ROADMAP</p>
         <div className="flex lg:flex-row mt-4 w-full z-40 relative  flex-col ">
           <p className="text-white tracking-wide text-4xl z-10 font-semibold">
-            So, how are we <span className="text-green">going to do all of this?</span>
+            So, how are we{" "}
+            <span className="text-green">going to do all of this?</span>
           </p>
           <div className="flex flex-row lg:ml-auto">
             <hr className="border-t-2 w-[5rem] rounded-3xl border-green mt-4 mr-4" />
@@ -47,7 +42,7 @@ const Roadmap = () => {
     </div>
   );
 };
-let milestoneTitles = [
+const milestoneTitles = [
   "FUNDAMENTALS",
   "FUNDRAISING",
   "CUSTOMER-FACING PLATFORM",
@@ -57,7 +52,7 @@ let milestoneTitles = [
   "BUSINESS-FACING PLATFORM",
 ];
 
-let milestones = [
+const milestones = [
   [
     {
       name: "Vision",
@@ -101,7 +96,6 @@ let milestones = [
       name: "Private Fundraising",
       done: false,
     },
-    ,
   ],
   [
     {

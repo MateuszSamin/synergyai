@@ -1,10 +1,6 @@
-import React from "react";
-import Image from "next/image";
 import Container from "./Container";
-import { FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
-import PurpleFlare from "../../public/PurpleFlare.png";
 
-const Footer = (props: any) => {
+const Footer = () => {
   return (
     <div className="w-full relative  z-20 ">
       <Container className="justify-between lg:h-40 relative py-4 space-y-6 lg:space-y-0  text-white items-center flex flex-col-reverse lg:flex-row">
@@ -26,14 +22,14 @@ const Footer = (props: any) => {
                     </a> */}
         </div>
 
-        <p
+        <button
           className="cursor-pointer text-center lg:text-right w-[20rem] mt-4 lg:mt-0"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
         >
           Back to top
-        </p>
+        </button>
       </Container>
     </div>
   );

@@ -1,17 +1,15 @@
-import React from "react";
-import Container from "./Container";
-import Evan from "../../public/team/Evan.png";
-import Jakub from "../../public/team/Jakub.png";
-import Paweł from "../../public/team/Paweł.png";
-import Rafał from "../../public/team/Rafał.png";
 import Antoni from "../../public/team/Antoni.png";
-import Karol from "../../public/team/Karol.png";
+import Dot from "../../public/team/Dot.png";
+import Flare from "../../public/team/Flare.png";
+import Jakub from "../../public/team/Jakub.png";
 import KubaM from "../../public/team/JakubM.png";
-import Tomasz from "../../public/team/Tomasz.png";
+import Karol from "../../public/team/Karol.png";
 import Mateusz from "../../public/team/Mateusz.png";
 import Outline from "../../public/team/Outline.png";
-import Flare from "../../public/team/Flare.png";
-import Dot from "../../public/team/Dot.png";
+import Paweł from "../../public/team/Paweł.png";
+import Rafał from "../../public/team/Rafał.png";
+import Tomasz from "../../public/team/Tomasz.png";
+import Container from "./Container";
 
 import Image from "next/image";
 
@@ -93,10 +91,17 @@ const TeamSection = () => {
         <div className="lg:flex flex-row gap-4 lg:gap-0 lg:space-x-10 mx-auto grid gric-cols-1 lg:grid-cols-2  mt-4 lg:mt-20">
           {AdvisorTeam.map((advisor, index) => {
             return (
-              <div key={index} className="lg:flex lg:flex-col text-center w-[13rem]">
+              <div
+                key={index}
+                className="lg:flex lg:flex-col text-center w-[13rem]"
+              >
                 <div className="h-[10rem] w-[10rem] mx-auto cursor-pointer rounded-full bg-gradient-to-b from-green  to-blue p-[2px]">
                   <div className="flex h-full w-[full] mx-auto items-center justify-center rounded-full bg-background back">
-                    <Image src={advisor.img} alt={advisor.name} className="w-[85%]" />
+                    <Image
+                      src={advisor.img}
+                      alt={advisor.name}
+                      className="w-[85%]"
+                    />
                   </div>
                 </div>
                 <p className="text-white mt-4 text-xl">{advisor.name}</p>
@@ -109,7 +114,7 @@ const TeamSection = () => {
     </div>
   );
 };
-let DevTeam = [
+const DevTeam = [
   {
     name: "Karol Proksa",
     img: Karol,
@@ -152,7 +157,7 @@ let DevTeam = [
   },
 ];
 
-let AdvisorTeam = [
+const AdvisorTeam = [
   {
     name: "Jakub Stefanek",
     img: Jakub,

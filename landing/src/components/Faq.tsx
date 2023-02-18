@@ -15,8 +15,10 @@ const Faq = () => {
         draggable={false}
       />
       <Container>
-        <label className="text-dark-green tracking-widest">FAQ</label>
-        <h1 className="mt-6 text-5xl font-semibold mb-10">Do you have any questions?</h1>
+        <span className="text-dark-green tracking-widest">FAQ</span>
+        <h1 className="mt-6 text-5xl font-semibold mb-10">
+          Do you have any questions?
+        </h1>
         <FaqItem
           question="When will the platform be available?"
           answer="We are planning to ship alpha version of the platform in Q4 2023."
@@ -78,7 +80,10 @@ const FaqItem = ({ question, answer }: FaqItemProps) => {
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
       >
-        <Disclosure.Panel static className="font-sora text-paragraph ml-16 text-left">
+        <Disclosure.Panel
+          static
+          className="font-sora text-paragraph ml-16 text-left"
+        >
           {answer}
         </Disclosure.Panel>
       </Transition>

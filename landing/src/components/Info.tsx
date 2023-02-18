@@ -4,13 +4,24 @@ import Image from "next/image";
 import DotGalaxy from "../../public/DotGalaxy.png";
 import Tech from "../../public/Showcase.png";
 import GreenFlare from "../../public/greenFlare.png";
-import { FiKey, FiShield, FiTool, FiTrendingUp, FiWind, FiZap } from "react-icons/fi";
+import {
+  FiKey,
+  FiShield,
+  FiTool,
+  FiTrendingUp,
+  FiWind,
+  FiZap,
+} from "react-icons/fi";
 import Chart from "../../public/chart.png";
 
 const Info = () => {
   return (
     <div className="w-full bg-background relative flex-col z-30 font-sora pt-10">
-      <Image src={GreenFlare} alt="flare" className="absolute top-0 h-[90rem]" />
+      <Image
+        src={GreenFlare}
+        alt="flare"
+        className="absolute top-0 h-[90rem]"
+      />
       <Container className="h-auto py-8 relative flex flex-col text-paragraph">
         <div className="flex flex-col xl:flex-row items-center">
           <div className="space-y-6 flex-row">
@@ -21,9 +32,9 @@ const Info = () => {
               DeFi meets<span className="text-green"> AI</span>
             </p>
             <p className="tracking-widest text-sm text-center lg:text-left">
-              We are building a platform that utilizes AI to protect users from fraud in
-              DeFi. <br /> Our mission is providing super-advanced analysis and security
-              tools to the retail investor.
+              We are building a platform that utilizes AI to protect users from
+              fraud in DeFi. <br /> Our mission is providing super-advanced
+              analysis and security tools to the retail investor.
             </p>
           </div>
           <div className="w-full lg:w-[40rem] mx-auto lg:ml-auto relative lg:mt-0 hidden lg:block ">
@@ -66,9 +77,9 @@ const Info = () => {
                   <p className="text-white">Synergy TOOLS</p>
                 </div>
                 <p className="lg:w-2/3 mt-2 justify-center text-center lg:text-left">
-                  You will be able to discover projects before others, make investment
-                  decisions based on metrics provided by AI, and evaluate risk more
-                  accurately.
+                  You will be able to discover projects before others, make
+                  investment decisions based on metrics provided by AI, and
+                  evaluate risk more accurately.
                 </p>
               </div>
               <div className="w-[20rem]  mx-auto lg:mx-0 lg:mr-auto">
@@ -77,9 +88,9 @@ const Info = () => {
                   <p className="text-white">Synergy SAFU</p>
                 </div>
                 <p className="lg:w-2/3 mt-2 justify-center text-center lg:text-left">
-                  Be safeguarded from rug-pulls. Our AI models scan smart contracts to
-                  identify relevant features that could prevent purchases or mint new
-                  tokens.
+                  Be safeguarded from rug-pulls. Our AI models scan smart
+                  contracts to identify relevant features that could prevent
+                  purchases or mint new tokens.
                 </p>
               </div>
               <div className="w-[20rem]  mx-auto lg:mx-0 lg:mr-auto">
@@ -88,8 +99,8 @@ const Info = () => {
                   <p className="text-white">Synergy REAL YIELD</p>
                 </div>
                 <p className="lg:w-2/3 mt-2 justify-center text-center lg:text-left">
-                  Staking our token will produce real yield, a percent of the total
-                  platform’s fees paid in ETH.
+                  Staking our token will produce real yield, a percent of the
+                  total platform’s fees paid in ETH.
                 </p>
               </div>
             </div>
@@ -104,8 +115,8 @@ const Info = () => {
                 <p className="text-white">Synergy MEME GEN</p>
               </div>
               <p className="lg:w-2/3 mt-2 justify-center text-center lg:text-left">
-                Users who are fans of decentralized markets and memecoins can use our
-                MEMECOINS GENERATOR to create their own assets.
+                Users who are fans of decentralized markets and memecoins can
+                use our MEMECOINS GENERATOR to create their own assets.
               </p>
             </div>
             <div className="w-[20rem]  mx-auto lg:mx-0 lg:mr-auto">
@@ -114,9 +125,10 @@ const Info = () => {
                 <p className="text-white">Synergy FRONTRUNNER</p>
               </div>
               <p className="lg:w-2/3 mt-2 justify-center text-center lg:text-left">
-                The project founders are removing liquidity? Frontrun them! Synergy
-                FRONTRUNNER monitors mempool transactions and automatically sells your
-                tokens before the founders manage to rug pull.
+                The project founders are removing liquidity? Frontrun them!
+                Synergy FRONTRUNNER monitors mempool transactions and
+                automatically sells your tokens before the founders manage to
+                rug pull.
               </p>
             </div>
             <div className="w-[20rem]  mx-auto lg:mx-0 lg:mr-auto">
@@ -125,9 +137,10 @@ const Info = () => {
                 <p className="text-white">Synergy AUDIT</p>
               </div>
               <p className="lg:w-2/3 mt-2 justify-center text-center lg:text-left">
-                Every developer on the Ethereum network can take advantage of a free,
-                brief audit of their token contract for security and hidden features. The
-                audit will be fully automatic and instantaneous.
+                Every developer on the Ethereum network can take advantage of a
+                free, brief audit of their token contract for security and
+                hidden features. The audit will be fully automatic and
+                instantaneous.
               </p>
             </div>
           </div>
