@@ -6,7 +6,7 @@ module.exports = {
   },
   parserOptions: { ecmaVersion: 8 },
   ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'],
-  extends: ['eslint:recommended', 'next'],
+  extends: ['eslint:recommended', 'next/core-web-vitals'],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
