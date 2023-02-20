@@ -13,6 +13,8 @@ import Dots2 from "../../public/dots/2.png";
 import Flare from "../../public/flare.png";
 import Loco from "../../public/loco.png";
 import Certik from "../../public/logos/certik.webp";
+import Chainlink from "../../public/logos/chainlink.png";
+import Tonstarter from "../../public/logos/Tonstarter.png";
 import Parlour from "../../public/logos/parlour.png";
 import Wilner from "../../public/logos/wilner.png";
 import PurpelFlare from "../../public/PurpleFlare.png";
@@ -94,24 +96,19 @@ export default function Home() {
                   src={Certik}
                   alt="partner logo"
                 />
-                {/* <Image
+                <Image
 									className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
 									src={Chainlink}
 									alt='partner logo'
-								/> */}
-                {/* <Image
-									className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
-									src={Bitget}
+								/>
+                <Image
+									className='w-24 opacity-50 hover:opacity-100 grayscale duration-300 transition'
+									src={Tonstarter}
 									alt='partner logo'
-								/> */}
+								/>
                 <Image
                   className="w-20 opacity-50 hover:opacity-100 duration-300 transition"
                   src={Parlour}
-                  alt="partner logo"
-                />
-                <Image
-                  className="w-24 opacity-50 hover:opacity-100 duration-300 transition"
-                  src={Wilner}
                   alt="partner logo"
                 />
               </div>
