@@ -7,7 +7,7 @@
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
 %.pdf: %.md
-	pandoc --bibliography=biblio.bib --citeproc -o $@ $<
+	pandoc -o $@ $<
 
 clean:
 	rm -f *.pdf
