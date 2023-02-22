@@ -17,7 +17,7 @@ The emergence of cryptoassets, such as ERC-20 tokens, has created numerous novel
 Seeking high returns, investors purchase tokens in spite of being unable to fully assess the risk of such an investment,
 making themselves vulnerable to ICO fraud.
 
-The Solidity programming language, being the most popular smart contract development language is to this day at an early stage of development. This results in emerging ways to covey malicious functions and design patterns into the smart contract. The problem is so apparent, that the community of developers started organizing contests to hide[^contest] ill-intentioned code in seemingly secure contracts.
+The Solidity programming language, being the most popular smart contract development language is to this day at an early stage of development. This results in emerging ways to embed malicious functions and design patterns within a smart contract. The problem is so apparent, that the community of developers started organizing contests to hide[^contest] ill-intentioned code in seemingly secure contracts.
 
 Around 4.6 million smart contracts were deployed on the Ethereum mainnet in Q4 2022 alone[^scdata],
 a fair share of them being ERC-20[^erc20] compliant. 
