@@ -17,13 +17,12 @@ The emergence of cryptoassets, such as ERC-20 tokens, has created numerous novel
 Seeking high returns, investors purchase tokens in spite of being unable to fully assess the risk of such an investment,
 making themselves vulnerable to ICO fraud.
 
-MENTION THE WEIRDNESS OF SOLIDITY AND DIFFICULTIES - solidity - impenetrable (underhanded contest) -- https://underhanded.soliditylang.org
+The Solidity programming language, being the most popular smart contract development language is to this day at an early stage of development. This results in emerging ways to covey malicious functions and design patterns into the smart contract. The problem is so apparent, that the community of developers started organizing contests to hide[^contest] ill-intentioned code in seemingly secure contracts.
 
 Around 4.6 million smart contracts were deployed on the Ethereum mainnet in Q4 2022 alone[^scdata],
 a fair share of them being ERC-20[^erc20] compliant. 
-This barrage of investment opportuninies makes it difficult ?????
 
-- rug pull rate -- https://www.investopedia.com/news/80-icos-are-scams-report/ https://www.wired.com/story/new-crypto-token-scams-2022/
+Research[^uniresearch] shows that 97.7% of Uniswap[^uniswap] listed tokens are considered *rug pulls*. If one were to choose a random token listed on Uniswap, there would be approximately 97.7% chance that they would choose a fraud.
 
 Decentralized exchanges (DEXs) are the most popular market where tokens can be obtained.
 Unlike traditional exchanges, such platforms are often open-source and have extensive public security audits.
@@ -35,6 +34,12 @@ We find that the majority of ICO fraud (*rug pulls*) is performed by means of:
 - or, purposefully placing illicit mechanisms in a smart contract, e.g. allowing the creators to mint any amount of the token.
 
 [^scdata]: Alchemy, Web3 Development Report (Q4 2022)
+
+[^contest]: https://underhanded.soliditylang.org/ Underhanded Solidity Contest, 2022
+
+[^uniresearch]: https://export.arxiv.org/pdf/2109.00229https://export.arxiv.org/pdf/2109.00229 Trade of Trick? Detecting and Characterizing Scam Tokens on Uniswap Decentralized Exchange
+
+[^uniswap]: https://uniswap.org Uniswap Decentralized Exchange
 
 ## Solutions
 
@@ -59,6 +64,7 @@ Instead, full-spectrum code analysis and machine learning provide a way to detec
 The results of such a full-spectrum analyses can be used by investors and on-chain software through specialized oracles.
 
 [^tks]: https://tokensniffer.com
+
 [^lotoffraud]: S. Shobhit, "$9 Million Lost Each Day In Cryptocurrency Scams" (2019) 
 
 # Methodology
@@ -78,6 +84,7 @@ $$
 That take as input some token, including its smart contract creation code and yield a risk score associated with this contract.
 We define the risk associated with a particular token as the percentage of the supply that a single entity can control.
 For example:
+
 - a token whose contract includes a mint function callable by the owner has an associated risk of $r = 100\%$
 - a token which has $50\%$ of its supply in a locked liquidity pool, $30\%$ bought by unconnected EOAs[^eo], and $20\%$ in a premint unvested pool has a risk of $r = 20\%$.
 
@@ -137,7 +144,7 @@ The static analysis model returns a single information: the risk value.
 This value does not reflect the overall risk related to a token - it captures only one of its parts,
 i.e. the possibility of the smart contract containing dangerous anti-features.
 
-## Dynamic analysis 
+## Dynamic analysis
 
 Dynamic analysis is the process of inspecting software by executing it in a controlled environment.
 By executing certain functions within a smart contract, followed by simulating transfers and sales.
@@ -178,6 +185,7 @@ and other groups.
 The risk returned by this analysis is the percent of the total supply held by the largest clique, 
 excluding tokens held in approved lock contracts with a release time more that 2 days in the future.
 Such a value is important to potential investors, as cliques operate as singular entities 
+
 - they are able to coordinate the sale of their holdings as well as other operations that could significantly alter the price of an asset.
 
 [^3]: Token generation event, here understood as the moment when the token supply is first created.
