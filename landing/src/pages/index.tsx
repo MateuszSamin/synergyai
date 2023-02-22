@@ -35,10 +35,13 @@ export default function Home() {
           key="desc"
         />
 
-        <meta property="og:title" content="SynergyAI" />
+        <meta
+          property="og:title"
+          content="SynergyAI | Never get rugged again. The AI-powered Toolkit for DeFi is here."
+        />
         <meta
           property="og:description"
-          content="Never get rugged again. The AI-powered Toolkit for DeFi is here."
+          content="Meet SynergyAI, your AI-powered dashboard to DeFi. Explore decentralized markets with a super-advanced toolkit at your fingertips. Make better decisions based on AI predictions and ensure the safety of your investments."
         />
         <meta property="og:image" content="https://i.imgur.com/rEw9bgB.png" />
       </Head>
