@@ -4,10 +4,10 @@
 # Abstract
 
 Blockchain technologies have given rise to new types of markets, which are vulnerable to abuse due to a lack of traditional regulatory guarantees.
-We propose a self-adjusting system which allows to assess the safety of a potential investment, based on an ensemble of algorithms. 
-This ensemble is able to analyze tokens within seconds from deployment and continuously update its predictions.
+We propose a self-adjusting system which allows for assessing the safety of a potential investment, based on an ensemble of algorithms. 
+This ensemble can analyze tokens within seconds from deployment and continuously update its predictions.
 To prevent drift from current market conditions, the algorithms are constantly tuned based on a retroactive evaluation of their performance.
-The result is a human-readable and reliable way to estimate risk associated with a token.
+The result is a human-readable and reliable way to estimate the risk associated with a token.
 
 # Introduction
 
@@ -22,7 +22,7 @@ The Solidity programming language, being the most popular smart contract develop
 Around 4.6 million smart contracts were deployed on the Ethereum mainnet in Q4 2022 alone[^scdata],
 a fair share of them being ERC-20[^erc20] compliant. 
 
-Research[^uniresearch] shows that 97.7% of Uniswap[^uniswap] listed tokens are considered *rug pulls*. If one were to choose a random token listed on Uniswap, there would be approximately 97.7% chance that they would choose a fraud.
+Research[^uniresearch] shows that 97.7% of Uniswap[^uniswap] listed tokens are considered *rug pulls*. If one were to choose a random token listed on Uniswap, there would be approximately a 97.7% chance that they would choose a fraud.
 
 Decentralized exchanges (DEXs) are the most popular market where tokens can be obtained.
 Unlike traditional exchanges, such platforms are often open-source and have extensive public security audits.
@@ -33,35 +33,35 @@ We find that the majority of ICO fraud (*rug pulls*) is performed by means of:
 - the token creators retaining a significant amount of the initial supply that is obfuscated from potential investors;
 - or, purposefully placing illicit mechanisms in a smart contract, e.g. allowing the creators to mint any amount of the token.
 
-[^scdata]: Alchemy, Web3 Development Report (Q4 2022)
+[^scdata]: Alchemy, "Web3 Development Report (Q4 2022)"
 
-[^contest]: https://underhanded.soliditylang.org/ Underhanded Solidity Contest, 2022
+[^contest]: Underhanded Solidity Contest, https://underhanded.soliditylang.org/
 
-[^uniresearch]: https://export.arxiv.org/pdf/2109.00229https://export.arxiv.org/pdf/2109.00229 Trade of Trick? Detecting and Characterizing Scam Tokens on Uniswap Decentralized Exchange
+[^uniresearch]: X. Pengcheng et al., "Trade of Trick? Detecting and Characterizing Scam Tokens on Uniswap Decentralized Exchange" (2021), URL: https://export.arxiv.org/pdf/2109.00229
 
-[^uniswap]: https://uniswap.org Uniswap Decentralized Exchange
+[^uniswap]: Uniswap Decentralized Exchange, https://uniswap.org
 
 ## Solutions
 
-Many solutions exist that try to tackle this problem. The most trustworthy way of ensuring that an asset is not fraudulent are audits. 
-However, the existance of audits does not decrease the risk of investing in new or low-marketcap tokens.
+Many solutions exist that try to tackle this problem. The most trustworthy way of ensuring that an asset is not fraudulent is auditing. 
+However, the existence of audits does not decrease the risk of investing in new or low-marketcap tokens.
 They present a catch-22 situation: only companies that are not conducting fraud are willing to pay to have an audit conducted.
 Thus, they are of little value to investors seeking to support early-stage projects.
 
 The goal of ensuring the safety of all token investments requires tools that are quick to use and do not require significant monetary commitment.
 
-Recently, solutions trying to fulfill those criteria have become publically available. 
+Recently, solutions trying to fulfil those criteria have become publically available. 
 Notably, TokenSniffer[^tks] and honeypot detectors help detect anti-features[^af] of smart contracts.
-While they can be a good starting point for investment research, their assessments are often chnged by simply altering the names of functions and events,
+While they can be a good starting point for investment research, their assessments are often changed by simply altering the names of functions and events,
 as those tools often look only for specific techniques employed by fraudsters instead of performing a full analysis.
 
 In accordance with the above, our literature review has found that the amount of ICO fraud has not decreased since the introduction of those solutions[^lotoffraud].
 We postulate that this is a direct result of the inadequacy of currently available analysis tools.
 
-We believe that reliable fraud detection should not be based upon searching for well-known techniques.
+We believe that reliable fraud detection should not be based on searching for well-known techniques.
 Instead, full-spectrum code analysis and machine learning provide a way to detect both known and novel attempts at subterfuge.
 
-The results of such a full-spectrum analyses can be used by investors and on-chain software through specialized oracles.
+The results of such a full-spectrum analysis can be used by investors and on-chain software through specialized oracles.
 
 [^tks]: https://tokensniffer.com
 
@@ -97,7 +97,7 @@ as we found those approaches to better fit the diverse problem space of token ri
 [^af]: An *anti-feature* is a functionality intentionally introduced by a developer whose existence can harm the user of the smart contract.
 [^1]: In this context *in situ* means that the analysis is performed completely off-chain and does not involve any interaction with the deployed token.
 [^2]: We assume that every token is associated with a single main smart contract.
-[^eo]: An *externally owned account* (EOA) is an account not controlled by a smart contract, but rather a regular user.
+[^eo]: An *externally owned account* (EOA) is an account not controlled by a smart contract, but rather by a regular user.
 
 ## AI-based static analysis
 
@@ -115,7 +115,7 @@ For usage with the model, a smart contract bytecode must be preprocessed using t
 1. the storage location for token balances is identified and saved;
 2. code paths that only read the state of the contract are discarded, leaving only write functions;
 3. functions directly affecting the token balances are identified;
-4. functions affecting values that afore-mentioned functions depend on are identified - this dependency resolution is repeated until completion;
+4. functions affecting values that the afore-mentioned functions depend on are identified - this dependency resolution is repeated until completion;
 5. code paths that do not affect balances directly or indirectly are discarded.
 
 This process results in a set of paths that lead from a set of initial conditions and constraints to a change in token balances.
@@ -123,24 +123,24 @@ Such a path can be modelled as a directed acyclic graph (DAG) and regarded as a 
 
 In this form, paths can be tokenized and ingested into the AI model. 
 We have obtained satisfactory preliminary results by representing the graph as a text file containing the list of vertexes,
-but future reseatch is needed to evaluate the best format for the tokenization of data in such a format.
+but future research is needed to evaluate the best format for the tokenization of data in such a format.
 
 ### Training
 
-The model is initially trained by creating smart contracts manually and introducing variation in their features 
+The model is initially trained by creating smart contracts manually and introducing variations in their features 
 (i.e. changing the names of functions, modifying the list of possible features, merging and splitting code paths, altering constants etc.)
-The variation is random, but remains predictable enough so as to allow the risk factor to be calculated manually.
+The variation is random but remains predictable enough to allow the risk factor to be calculated manually.
 The pairs of compiled bytecodes and calculated risk factors are used to train the model.
 
-The afore-mentioned process provides an essential part of model traning. 
+The aforementioned process provides an essential part of model training. 
 Nevertheless, it is not feasible to generate training data that is representative enough to cover most real-world applications.
-To ensure that the model improves continuously and is able to adapt to changing market conditions,
+To ensure that the model improves continuously and can adapt to changing market conditions,
 a retroactive assessment and tuning pipeline should be implemented.
 The reasoning behind such a process has been described in <span class="smallcaps">[Accuracy improvements](#accimp)</span>.
 
 ### Interpretation of results
 
-The static analysis model returns a single information: the risk value.
+The static analysis model returns a single piece of information: the risk value.
 This value does not reflect the overall risk related to a token - it captures only one of its parts,
 i.e. the possibility of the smart contract containing dangerous anti-features.
 
@@ -150,40 +150,40 @@ Dynamic analysis is the process of inspecting software by executing it in a cont
 By executing certain functions within a smart contract, followed by simulating transfers and sales.
 this algorithm is able to detect anti-features such as hidden fees and honeypots without the need to understand the underlying code.
 
-The analysis process begins by identifying all public and external functions within a contract that modify state.
-Then, we identify functions defined by EIP-20[^erc20] and assert their complinance with the standard using a standardized test suite.
-Upon detection of a standards violation (such as failing to return the correct balance of a holder) the token is automatically issued a risk score of 1
+The analysis process begins by identifying all public and external functions within a contract that modify its state.
+Then, we identify functions defined by EIP-20[^erc20] and assert their compliance with the standard using a standardized test suite.
+Upon detection of a standards violation (such as failing to return the correct balance of a holder), the token is automatically issued a risk score of 1
 and flagged for manual review.
 
 Compliant tokens progress to the next stage where the algorithm simulates calls to functions outside EIP-20 
 from different addresses and notes the changes. The purpose of this step is to identify functions that set fees, change reflection settings
-or block certain addresses. Having identified such functions, the algoritm preforms a search in the parameter space,
+or block certain addresses. Having identified such functions, the algorithm performs a search in the parameter space,
 trying to find the configuration, which funnels the most funds to the deployer of the token.
 
 Such a search is easy to perform within the space of a single function, such as `setFee(uint256 nominator, uint256 denominator)`;
 however, searching larger parameter spaces thoroughly necessarily involves a non-constant speed penalty to the algorithm.
 While we have had promising results with using classical methods of reducing search spaces, 
-we are also considering the intruduction of an AI model able to look for patterns without human intervention.
+we are also considering the introduction of an AI model able to look for patterns without human intervention.
 
-We include this algorithm in the ensebmle to ensure that every contract analysis is complete.
-Having two complimentary approaches to contract analysis helps safeguard against model hallucination
+We include this algorithm in the ensemble to ensure that every contract analysis is complete.
+Having two complementary approaches to contract analysis helps safeguard against model hallucination
 and significantly increases the cost of developing ways to subvert the fraud detection system.
 
 [^erc20]: F. Vogelsteller, V. Buterin, "ERC-20: Token Standard" (2015)
 
 ## Holder graph analysis
 
-A signifiacnt of ICO fraud is conducted even without the introduction of contract anti-features.
+A significant of ICO fraud is conducted even without the introduction of contract anti-features.
 If Eva deploys a new ERC-20 smart contract, she can create the token supply herself.
-Then, she can only add a part of said supply to a liquidity pool and scatter the rest throughout a range of seemingly unaffiliated addresses.
+Then, she can only add a part of the said supply to a liquidity pool and scatter the rest throughout a range of seemingly unaffiliated addresses.
 Such a process can be mediated by exchanges, bridges and other tools, often making the transactions untraceable to the average investor.
 
 By analyzing the network of token holders at TGE[^3] and monitoring how it changes over time, we are able to identify cliques of cooperating addresses.
-Then, instead of considering their holdings as separate, we are able to lump them together and identify how large are the holdings of contract deployers
+Then, instead of considering their holdings as separate, we can lump them together and identify how large are the holdings of contract deployers
 and other groups.
 
-The risk returned by this analysis is the percent of the total supply held by the largest clique, 
-excluding tokens held in approved lock contracts with a release time more that 2 days in the future.
+The risk returned by this analysis is the per cent of the total supply held by the largest clique, 
+excluding tokens held in approved lock contracts with a release time of more than 2 days in the future.
 Such a value is important to potential investors, as cliques operate as singular entities 
 
 - they are able to coordinate the sale of their holdings as well as other operations that could significantly alter the price of an asset.
@@ -193,7 +193,7 @@ Such a value is important to potential investors, as cliques operate as singular
 # Aggregation and accuracy
 
 To counteract potential variance in accuracy between ensemble algorithms we introduce an aggregation system.
-Similarly to a gating model in a MoE setting, the aggregation system can be thought of as a one-layer neural network.
+Similarly to a gating model in an MoE setting, the aggregation system can be thought of as a one-layer neural network.
 The weights within the aggregator are defined as follows:
 
 $$
@@ -210,7 +210,7 @@ $$
 Where $A(T)$ is the result of the static analysis, $D(T)$ is the result of the dynamic analysis, 
 and $G(T)$ is the result of the holder graph assessment.
 
-$R(T)$ can be regarded as the final risk value caculated by the ensemble.
+$R(T)$ can be regarded as the final risk value calculated by the ensemble.
 
 ## Accuracy improvements {#accimp}
 
@@ -235,8 +235,8 @@ and change the aggregator weights to promote more accurate algorithms.
 # Conclusion
 
 We have proposed a comprehensive system for estimating the risk of a token being used to conduct ICO fraud.
-Unlike preexisting tools, the SynergyAI algorithm ensemble is able to detect fraud by first-principles analysis, 
-insted of simply comparing against a predefined list of illicit techniques.
+Unlike preexisting tools, the SynergyAI algorithm ensemble can detect fraud by first-principles analysis, 
+instead of simply comparing against a predefined list of illicit techniques.
 Additionally, the SynergyAI suite is able to evolve without human intervention,
 ensuring the quality of results even as blockchains change.
 
