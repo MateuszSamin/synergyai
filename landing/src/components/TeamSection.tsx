@@ -8,6 +8,7 @@ import Mateusz from "../../public/team/Mateusz.png";
 import Outline from "../../public/team/Outline.png";
 import Paweł from "../../public/team/Paweł.png";
 import Rafał from "../../public/team/Rafał.png";
+import Evan from "../../public/team/Evan.png";
 import Tomasz from "../../public/team/Tomasz.png";
 import Container from "./Container";
 
@@ -162,10 +163,10 @@ const AdvisorTeam = [
     name: "Jakub Stefanek",
     img: Jakub,
   },
-  // {
-  // 	name: 'Evan Luthra',
-  // 	img: Evan,
-  // },
+  {
+    name: "Evan Luthra",
+    img: Evan,
+  },
   {
     name: "Paweł Łaskarzewski",
     img: Paweł,
