@@ -29,6 +29,18 @@ export default function Home() {
     <>
       <Head>
         <title>SynergyAI</title>
+        <meta
+          name="description"
+          content="Never get rugged again. The AI-powered Toolkit for DeFi is here."
+          key="desc"
+        />
+
+        <meta property="og:title" content="SynergyAI" />
+        <meta
+          property="og:description"
+          content="Never get rugged again. The AI-powered Toolkit for DeFi is here."
+        />
+        <meta property="og:image" content="https://i.imgur.com/rEw9bgB.png" />
       </Head>
 
       <main className="bg-background font-sora overflow-hidden w-full md:h-screen flex flex-col justify-center items-center text-white">
