@@ -53,4 +53,3 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
-export { PRIVATE_KEY };
