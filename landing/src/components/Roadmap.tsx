@@ -46,7 +46,6 @@ const milestoneTitles = [
   "FUNDAMENTALS",
   "FUNDRAISING",
   "CUSTOMER-FACING PLATFORM",
-  "INITIAL DEVELOPMENT",
   "BIG LAUNCH",
   "GLOBAL OUTREACH",
   "BUSINESS-FACING PLATFORM",
@@ -132,24 +131,6 @@ const milestones = [
     },
     {
       name: "Synergy REAL YIELD Development",
-      done: false,
-    },
-  ],
-  [
-    {
-      name: "Release of V1 Platform",
-      done: false,
-    },
-    {
-      name: "DEX Listing",
-      done: false,
-    },
-    {
-      name: "UX Analysis",
-      done: false,
-    },
-    {
-      name: "Customer Behavior Adjustments",
       done: false,
     },
   ],
