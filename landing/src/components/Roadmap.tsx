@@ -45,7 +45,7 @@ const Roadmap = () => {
 const milestoneTitles = [
   "FUNDAMENTALS",
   "FUNDRAISING",
-  "INITIAL DEVELOPMENT",
+  "CUSTOMER-FACING PLATFORM",
   "BIG LAUNCH",
   "GLOBAL OUTREACH",
   "BUSINESS-FACING PLATFORM",
