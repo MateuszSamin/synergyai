@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/Logo.png";
 import Container from "./Container";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -18,26 +19,28 @@ const Navbar = () => {
                         </Link>
                     )} */}
         </div>
-        {/* <div className='flex flex-row items-center w-[15rem]  space-x-5'>
-					<a
-						href='https://google.com'
-						target='_blank'
-						rel='noreferrer'>
-						<FaLinkedinIn size={20} />
-					</a>
-					<a
-						href='https://google.com'
-						target='_blank'
-						rel='noreferrer'>
-						<FaTwitter size={20} />
-					</a>
-					<button onClick={() => window.alert("Coming soon...")} className='h-12 w-[10rem] cursor-pointer rounded-3xl bg-gradient-to-bl from-green  to-blue p-[2px]'>
+        <div className="flex flex-row justify-center md:justify-end items-center w-[15rem]  space-x-5">
+          <a
+            href="https://www.linkedin.com/company/synergyai/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedinIn size={20} />
+          </a>
+          <a
+            href="https://twitter.com/synergyai_io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaTwitter size={20} />
+          </a>
+          {/* <button onClick={() => window.alert("Coming soon...")} className='h-12 w-[10rem] cursor-pointer rounded-3xl bg-gradient-to-bl from-green  to-blue p-[2px]'>
 						<div className='flex h-full w-full mx-auto items-center justify-center rounded-3xl bg-background back'>
 							<p className='text-sm text-white'>Launch App</p>
 							<BsPlus size={30} className='ml-2' />
 						</div>
-					</button>
-				</div> */}
+					</button> */}
+        </div>
       </Container>
     </div>
   );

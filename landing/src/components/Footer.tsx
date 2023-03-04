@@ -1,3 +1,4 @@
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import Container from "./Container";
 
 const Footer = () => {
@@ -11,15 +12,20 @@ const Footer = () => {
           All Rights Reserved.
         </p>
         <div className="flex flex-row mx-auto space-x-8 text-sm items-center justify-center">
-          {/* <a href="https://google.com" target="_blank" rel="noreferrer">
-                        <FaLinkedinIn size={20} />
-                    </a>
-                    <a href="https://google.com" target="_blank" rel="noreferrer">
-                        <FaTwitter size={20} />
-                    </a>
-                    <a href="https://google.com" target="_blank" rel="noreferrer">
-                        <FaFacebookF size={20} />
-                    </a> */}
+          <a
+            href="https://www.linkedin.com/company/synergyai/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedinIn size={20} />
+          </a>
+          <a
+            href="https://twitter.com/synergyai_io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaTwitter size={20} />
+          </a>
         </div>
 
         <button
