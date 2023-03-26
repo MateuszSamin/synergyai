@@ -1,0 +1,25 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+secrets.json
+
+coverage/
+coverage.json
+
+artifacts/
+cache/
+types/
+.openzeppelin/unknown-1337.json
+.openzeppelin/unknown-31337.json
