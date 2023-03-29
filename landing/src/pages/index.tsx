@@ -12,7 +12,6 @@ import Dots1 from "../../public/dots/1.png";
 import Dots2 from "../../public/dots/2.png";
 import Flare from "../../public/flare.png";
 import Loco from "../../public/loco.png";
-import Certik from "../../public/logos/certik.webp";
 import Chainlink from "../../public/logos/chainlink.png";
 import Tonstarter from "../../public/logos/Tonstarter.png";
 import Parlour from "../../public/logos/parlour.png";
@@ -103,14 +102,9 @@ export default function Home() {
           </div>
           <div>
             <h2 className="mt-8">Our Partners and Advisors</h2>
-            <div className="mt-2 w-10 h-1 bg-light-green"></div>
+            <div className="mt-2 w-10 h-1 bg-light-green mb-2"></div>
             {isDesktop ? (
               <div className="flex w-full gap-6 items-center">
-                <Image
-                  className="w-32 opacity-50 hover:opacity-100 duration-300 transition"
-                  src={Certik}
-                  alt="partner·logo"
-                />
                 <Image
                   className="w-32 opacity-50 hover:opacity-100 duration-300 transition"
                   src={Chainlink}
@@ -136,14 +130,14 @@ export default function Home() {
                 <div className="flex w-full gap-6 items-center">
                   <Image
                     className="w-32 opacity-50 hover:opacity-100 duration-300 transition"
-                    src={Certik}
+                    src={Chainlink}
                     alt="partner logo"
                   />
-                  {/* <Image
-										className='w-32 opacity-50 hover:opacity-100 duration-300 transition'
-										src={Chainlink}
-										alt='partner logo'
-									/> */}
+                  <Image
+                    className="w-32 opacity-50 grayscale hover:opacity-100 duration-300 transition"
+                    src={Tonstarter}
+                    alt="partner logo"
+                  />
                   {/* <Image
 										className='w-24 opacity-50 hover:opacity-100 duration-300 transition'
 										src={Bitget}
@@ -152,11 +146,6 @@ export default function Home() {
                   <Image
                     className="w-20 opacity-50 hover:opacity-100 duration-300 transition"
                     src={Parlour}
-                    alt="partner logo"
-                  />
-                  <Image
-                    className="w-24 opacity-50 hover:opacity-100 duration-300 transition"
-                    src={Wilner}
                     alt="partner logo"
                   />
                 </div>
