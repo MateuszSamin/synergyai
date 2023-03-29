@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import MainScreen from '../components/MainScreen'
+import Sidebar from '../components/Sidebar'
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <MainScreen />
+      <Sidebar />
     </div>
   )
 }
