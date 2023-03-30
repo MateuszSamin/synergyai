@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'sora';
+	src: url(../fonts/Sora-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'sora-light';
+	src: url(../fonts/Sora-ExtraLight.ttf);
+}

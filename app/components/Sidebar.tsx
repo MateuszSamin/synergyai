@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import LogoSidebar from "../public/assets/LogoSidebar.png"
-import SidebarIcon from "../public/assets/SidebarIcon.png"
-import UserIcon from "../public/assets/UserIcon.png"
+import LogoSidebar from "../public/assets/LogoSidebar.svg"
+import SidebarIcon from "../public/assets/SidebarIcon.svg"
+import UserIcon from "../public/assets/UserIcon.svg"
 
 export default function Sidebar() {
   return (
