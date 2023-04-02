@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import AnalisysSection from '../components/AnalisysSection'
 import MainScreen from '../components/MainScreen'
 import Sidebar from '../components/Sidebar'
 
@@ -13,8 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <MainScreen />
+      {/*<MainScreen />*/}
       <Sidebar />
+      <AnalisysSection />
     </div>
   )
 }
